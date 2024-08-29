@@ -1,0 +1,39 @@
+STEP 1
+create database solusimitra2;
+
+STEP 2
+use solusimitra2;
+
+STEP 3
+create table solusimitradua_id (
+	karyawan_id INT,
+    karyawan_name varchar (100),
+    karyawan_desc varchar (100)
+);
+
+--IN UNTUK ANGKA
+--VARCHAR UNTUK HURUF
+--APABILA INGIN MENAMBAHKAN FIELD PADA TABEL SIMAK PADA STEP 4 (MENGGUNAKAN ALTER TABLE)
+
+STEP 4
+alter table solusimitradua_id add email varchar (100);
+
+STEP 5
+insert into solusimitradua_id (karyawan_id, karyawan_name, karyawan_desc, email)
+values (1, 'jason', 'IT', 'jason@solusimitra.id');
+
+insert into solusimitradua_id (karyawan_id, karyawan_name, karyawan_desc, email)
+values (2, 'widy candra', 'CEO', 'widycandra@solusimitra.id');
+
+insert into solusimitradua_id (karyawan_id, karyawan_name, karyawan_desc, email)
+values (3, 'erick', 'manager', 'erick@solusimitra.id');
+
+insert into solusimitradua_id (karyawan_id, karyawan_name, karyawan_desc, email)
+values (4, 'david', 'assistant', 'david@solusimitra.id');
+
+insert into solusimitradua_id (karyawan_id, karyawan_name, karyawan_desc, email)
+values (5, 'muklis', 'office boy', 'muklis@solusimitra.id');
+
+STEP 6 ( APABILA SUDAH SELESAI DENGAN STEP DIATAS BISA DICEK DENGAN CARA DIBAWAH)
+select * from solusimitradua_id
+
