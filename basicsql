@@ -1,0 +1,15 @@
+-LIKE (Operator LIKEyang digunakan dalam klausaWHEREuntuk mencari pola yang ditentukan pada kolom / field)
+select * from solusimitradua_id
+where karyawan_name like '%w%';
+
+-IN ( Untuk mencari data lebih dari 1)
+select * from solusimitradua_id
+where karyawan_name in ('satria','fardi');
+
+-NOT (sarana ampuh untuk memfilter kumpulan data, memungkinkan pengguna mengecualikan baris yang cocok dengan daftar nilai tertentu)
+select * from solusimitradua_id
+where not karyawan_name = 'jason' and not karyawan_name = 'david';
+
+-AND (untuk mencari data dengan 2 filed)
+select * from solusimitradua_id
+where karyawan_name = 'david' and karyawan_desc = 'assistant';
